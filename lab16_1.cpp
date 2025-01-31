@@ -33,18 +33,18 @@ int main(){
 	showData(sum2,1,M);
 }
 
-void showData(double *d,int N,int M){
+void showData(double *a,int N,int M){
     cout << fixed << setprecision(2);
     for(int i = 0; i < N*M; i++){
-        cout << *(d+i);
+        cout << *(a+i);
         if((i+1)%M == 0) cout << endl;
         else cout << " ";
     }
 }
 
-void randData(double *d,int N,int M){
+void randData(double *a,int N,int M){
     for(int i = 0; i < N*M; i++){
-        *(d+i) = (double)(rand()%101) / 100;
+        *(a+i) = (double)(rand()%101) / 100;
     }
 }
 
